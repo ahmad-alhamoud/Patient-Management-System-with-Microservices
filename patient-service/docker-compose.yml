@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:latest
+    restart: on-failure
+    environment:
+      POSTGRES_USER: admin_user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+    ports:
+      - "5000:5432"
+
